@@ -2,186 +2,41 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vitrine Racco Santa Maria</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    :root {
-      --laranja-principal: #ff6600;
-      --laranja-suave: #ffa64d;
-    }
-    body {
-      background-color: #fff8f0;
-      color: #333;
-    }
-    .navbar {
-      background-color: var(--laranja-principal);
-    }
-    .navbar-brand, .nav-link {
-      color: white !important;
-      font-weight: 500;
-    }
-    .hero {
-      background: linear-gradient(135deg, var(--laranja-principal), var(--laranja-suave));
-      color: white;
-      padding: 80px 20px;
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 3rem;
-      font-weight: bold;
-    }
-    .btn-laranja {
-      background-color: var(--laranja-principal);
-      color: white;
-      border-radius: 25px;
-      padding: 10px 25px;
-      transition: 0.3s;
-    }
-    .btn-laranja:hover {
-      background-color: var(--laranja-suave);
-      color: #333;
-    }
-    footer {
-      background-color: var(--laranja-principal);
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-  </style>
+  <title>Vitrine Racco - Santa Maria</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand" href="#">Vitrine Racco</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="menu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-          <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#depoimentos">Depoimentos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
 
-  <!-- Hero -->
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">RACCO</div>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Produtos</a>
+      <a href="#">Contato</a>
+      <a href="cadastro.html" class="login">Entrar</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
   <section class="hero">
-    <h1>Vitrine Racco Santa Maria</h1>
-    <p>Praticidade, informação e inspiração para você</p>
-    <a href="#produtos" class="btn btn-laranja mt-3">Ver Produtos</a>
+    <div class="hero-content">
+      <h1>Beleza & Elegância que você sente na pele</h1>
+      <h2>Vitrine Racco – Santa Maria</h2>
+
+      <p>
+        Cosméticos Racco de alta performance que cuidam da sua pele,
+        realçam sua beleza natural e elevam sua autoestima.
+      </p>
+
+      <div class="buttons">
+        <a href="#" class="btn primary">🛍 Conhecer Produtos</a>
+        <a href="#" class="btn secondary">💬 Fale Conosco</a>
+      </div>
+    </div>
+
+    
   </section>
 
-  <!-- Carrossel -->
-  <div id="carouselProdutos" class="carousel slide container my-5" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="https://via.placeholder.com/800x400/ff6600/ffffff?text=Cosméticos" class="d-block w-100" alt="Cosméticos">
-      </div>
-      <div class="carousel-item">
-        <img src="https://via.placeholder.com/800x400/ffa64d/ffffff?text=Perfumes" class="d-block w-100" alt="Perfumes">
-      </div>
-      <div class="carousel-item">
-        <img src="https://via.placeholder.com/800x400/ff8533/ffffff?text=Cuidados+com+a+pele" class="d-block w-100" alt="Cuidados com a pele">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProdutos" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselProdutos" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
-
-  <!-- Sobre -->
-  <div id="sobre" class="container my-5">
-    <h2 class="text-center mb-4">Sobre</h2>
-    <p class="text-center">A Vitrine Racco é um canal digital que une praticidade, informação e inspiração, ajudando clientes a descobrir e adquirir produtos Racco com mais confiança e comodidade.</p>
-  </div>
-
-  <!-- Produtos -->
-  <div id="produtos" class="container my-5">
-    <h2 class="text-center mb-4">Produtos</h2>
-    <div class="row g-4">
-      <div class="col-md-3">
-        <div class="card h-100">
-          <img src="https://via.placeholder.com/300x200/ff6600/ffffff?text=Cosméticos" class="card-img-top" alt="Cosméticos">
-          <div class="card-body">
-            <h5 class="card-title">Cosméticos</h5>
-            <p class="card-text">Beleza e cuidado para o dia a dia.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card h-100">
-          <img src="https://via.placeholder.com/300x200/ffa64d/ffffff?text=Perfumes" class="card-img-top" alt="Perfumes">
-          <div class="card-body">
-            <h5 class="card-title">Perfumes</h5>
-            <p class="card-text">Fragrâncias marcantes e exclusivas.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card h-100">
-          <img src="https://via.placeholder.com/300x200/ff8533/ffffff?text=Cuidados+com+a+pele" class="card-img-top" alt="Cuidados com a pele">
-          <div class="card-body">
-            <h5 class="card-title">Cuidados com a pele</h5>
-            <p class="card-text">Tratamentos e hidratação para sua pele.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card h-100">
-          <img src="https://via.placeholder.com/300x200/ff9933/ffffff?text=Bem-estar" class="card-img-top" alt="Bem-estar">
-          <div class="card-body">
-            <h5 class="card-title">Bem-estar</h5>
-            <p class="card-text">Produtos que trazem equilíbrio e saúde.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Depoimentos -->
-  <section id="depoimentos" class="container my-5">
-    <h2 class="text-center mb-4">O que nossos clientes dizem</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card p-3 shadow-sm">
-          <p>"Adorei a praticidade da vitrine, encontrei meu perfume favorito em segundos!"</p>
-          <small>- Maria S.</small>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card p-3 shadow-sm">
-          <p>"Os produtos chegaram rápido e bem embalados. Recomendo muito!"</p>
-          <small>- João P.</small>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card p-3 shadow-sm">
-          <p>"A vitrine é super intuitiva, ficou fácil escolher meus cosméticos."</p>
-          <small>- Ana L.</small>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section id="faq" class="container my-5">
-    <h2 class="text-center mb-4">Perguntas Frequentes</h2>
-    <div class="accordion" id="faqAccordion">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="faq1">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1">
-            Como faço para comprar um produto?
-          </button>
-        </h2>
-        <div id="faqCollapse1" class="accordion
+</body>
+</html>

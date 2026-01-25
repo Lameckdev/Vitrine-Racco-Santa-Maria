@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+.header {
+  background: #1e1e1e;
+  color: #fff;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #f4a300;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.header nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.header nav a:hover {
+  color: #f4a300;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #8b5a12, #a66a18);
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  color: #fff;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero h2 {
+  font-size: 22px;
+  color: #fdd48b;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* BOTÕES */
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 14px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.primary {
+  background: #f4a300;
+  color: #000;
+}
+
+.primary:hover {
+  background: #ffb733;
+}
+
+.secondary {
+  border: 2px solid #f4a300;
+  color: #fff;
+}
+
+.secondary:hover {
+  background: #f4a300;
+  color: #000;
+}
+
+/* IMAGEM */
+.hero-image img {
+  max-width: 420px;
+  margin-left: 60px;
+}
